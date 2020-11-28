@@ -6,3 +6,4 @@ Disallow:
 
 # Throw crawlers a bone with a sitemap
 Sitemap: https://mogulchart.com/sitemap.xml
+
