@@ -11,6 +11,6 @@
   "author": "Mike Nikles, @mikenikles",
   "license": "ISC",
   "devDependencies": {
-    "firebase-tools": "^8.2.0"
+    "firebase-tools": "^8.16.2"
   }
 }
