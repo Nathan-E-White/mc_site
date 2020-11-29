@@ -1,11 +1,3 @@
-<script context="module">
-    export function preload() {
-        return this.fetch('sitemap.xml');
-    }
-
-    preload();
-</script>
-
 <style>
     h1, figure, p {
         text-align: center;
@@ -39,13 +31,6 @@
         }
     }
 </style>
-
-<script>
-    import {stores} from '@sapper/app';
-
-    const {preloading} = stores();
-    preload();
-</script>
 
 <svelte:head>
     <title>Mogul Charts -- Trade Like a Mogul</title>
