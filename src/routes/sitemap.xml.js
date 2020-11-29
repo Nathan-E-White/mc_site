@@ -57,6 +57,6 @@ function get(req, res) {
     //    .filter(p => p.slug.indexOf('future/') < 0 && p.slug.indexOf('alternate-reality/') < 0)
     //    .map(post => post.slug);
 
-    const feed = renderSiteMapXML(['privacy-policy', '']);
+    const feed = renderSiteMapXML(['privacy-policy', 'about', '']);
     res.end(feed);
 }
