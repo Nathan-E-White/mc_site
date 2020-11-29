@@ -1,23 +1,18 @@
 <svelte:head>
-    <title>Contact</title>
+    <title>Contact Us</title>
     <meta name="description" content="Contact information including... for MogulChart.com">
     <meta name="keywords" content="contact email phone address">
 
     <!-- Mandatory OpenGraph tags -->
-    <meta property="og:title" content="">
+    <meta property="og:title" content="Contact Information">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="">
+    <meta property="og:url" content="https://www.mogulchart.com/contact">
     <meta property="og:image" content="">
 
     <!-- Optional OpenGraph tags -->
-    <meta property="og:audio" content="">
-    <meta property="og:description" content="">
-    <meta property="og:locale" content="">
-    <meta property="og:locale:alternate" content="">
-    <meta property="site_name" content="">
-    <meta property="video" content="">
-
-
+    <meta property="og:description" content="Contact information, including email, address and phone for MogulCharts.com">
+    <meta property="og:locale" content="en_US">
+    <meta property="site_name" content="Mogul Charts">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
