@@ -47,6 +47,9 @@ ${contextPaths.map(path => `
 
 function get(req, res) {
 
+    res.setHeader('Cache-Control', `max-age=0, s-max-age=${600}`); // 10 min
+    res.setHeader('Content-Type','application/xml');
+
     res.writeHead(200, {
         'Cache-Control': `public, max-age=0, must-revalidate`,
         'Content-Type': 'application/xml'
