@@ -1,19 +1,17 @@
 <svelte:head>
-	<title>About</title>
+	<title>About Us</title>
 
 	<!-- Mandatory OpenGraph tags -->
-	<meta property="og:title" content="">
+	<meta property="og:title" content="About Us">
 	<meta property="og:type" content="website">
-	<meta property="og:url" content="">
+	<meta property="og:url" content="https://www.mogulcharts.com/about">
 	<meta property="og:image" content="">
 
 	<!-- Optional OpenGraph tags -->
-	<meta property="og:audio" content="">
-	<meta property="og:description" content="">
-	<meta property="og:locale" content="">
-	<meta property="og:locale:alternate" content="">
-	<meta property="site_name" content="">
-	<meta property="video" content="">
+	<meta property="og:description" content="A brief description of the creation of Mogul Charts">
+	<meta property="og:locale" content="en_US">
+	<meta property="site_name" content="Mogul Charts">
+
 </svelte:head>
 
 <h1>About this site</h1>
