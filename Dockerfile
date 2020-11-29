@@ -33,7 +33,7 @@ RUN npm run build
 FROM mhart/alpine-node:12 AS build-runtime
 WORKDIR /app
 COPY package.json package-lock.json ./
-COPY sitemap.xml ./
+
 RUN npm ci --production --unsafe-perm
 
 # =========================================================================== #
@@ -43,6 +43,7 @@ FROM mhart/alpine-node:slim-12
 WORKDIR /app
 COPY --from=build-app /app/__sapper__ ./__sapper__
 COPY --from=build-app /app/static ./static
+COPY --from=build-app /app/sitemap.xml ./
 COPY --from=build-runtime /app/node_modules ./node_modules
 
 # =========================================================================== #
