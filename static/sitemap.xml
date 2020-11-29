@@ -19,9 +19,12 @@
         <loc>https://mogulchart.com/disclaimer</loc>
     </url>
     <url>
-        <loc>https://mogulchart.com/cookie-policy</loc>
+        <loc>https://mogulchart.com/cookies-policy</loc>
     </url>
     <url>
         <loc>https://mogulchart.com/hidden-links</loc>
+    </url>
+    <url>
+        <loc>https://mogulchart.com/search</loc>
     </url>
 </urlset>
