@@ -1,3 +1,9 @@
+<script>
+	export function preload({params, query}){
+		return this.fetch('sitemap.xml');
+	}
+</script>
+
 <style>
 	h1, figure, p {
 		text-align: center;
