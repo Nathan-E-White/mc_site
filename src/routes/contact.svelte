@@ -11,4 +11,5 @@
 
 </svelte:head>
 
-<p>Placeholder for contact information.</p>
+
+<p><strong>Check back later...</strong></p>
