@@ -1,6 +1,6 @@
 <script context="module">
-	export async function preload(){
-		return await this.fetch(`sitemap.xml`);
+	export function preload(){
+		return this.fetch(`sitemap.xml`);
 	}
 </script>
 
