@@ -2,18 +2,15 @@
     <title>Hidden Links</title>
 
     <!-- Mandatory OpenGraph tags -->
-    <meta property="og:title" content="">
+    <meta property="og:title" content="Hidden Links">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="">
+    <meta property="og:url" content="https://www.mogulcharts.com/hidden-links">
     <meta property="og:image" content="">
 
     <!-- Optional OpenGraph tags -->
-    <meta property="og:audio" content="">
-    <meta property="og:description" content="">
-    <meta property="og:locale" content="">
-    <meta property="og:locale:alternate" content="">
-    <meta property="site_name" content="">
-    <meta property="video" content="">
+    <meta property="og:description" content="Links to hidden pages on Mogul charts, for crawlers and internet sleuths.">
+    <meta property="og:locale" content="en_US">
+    <meta property="site_name" content="Mogul charts">
 </svelte:head>
 
 <p>
