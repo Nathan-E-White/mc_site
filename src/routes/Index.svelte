@@ -1,3 +1,14 @@
+<script>
+    import { MaterialApp, AppBar, Divider, Button } from "svelte-materialify";
+
+    let theme = "light";
+
+    function toggleTheme(){
+        if(theme === "light") theme = "dark";
+        else theme = "light";
+    }
+</script>
+
 <style>
     h1, figure, p {
         text-align: center;
@@ -46,11 +57,25 @@
     <meta property="site_name" content="Mogul Charts">
 </svelte:head>
 
-<h1>Check back later...</h1>
 
-<figure>
-    <img alt='Borat' src='great-success.png'>
-    <figcaption><p><strong>Page coming soon!</strong></p></figcaption>
-</figure>
+<svelte:body>
+
+    <MaterialApp {theme}>
+        <AppBar>
+            <span slot="title">Title</span>
+        </AppBar>
+        <br/>
+        <Divider/>
+    </MaterialApp>
+
+    <h1>Check back later...</h1>
+
+    <figure>
+        <img alt='Borat' src='great-success.png'>
+        <figcaption><p><strong>Page coming soon!</strong></p></figcaption>
+    </figure>
+
+</svelte:body>
+
 
 
