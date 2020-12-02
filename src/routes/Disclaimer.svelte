@@ -14,4 +14,8 @@
 </svelte:head>
 
 
-<p><strong>Check back later...</strong></p>
+<svelte:body>
+    <h1>Content on Site</h1>
+    <h1>Investment Advice</h1>
+    <h1>Past & Hypothetical Performance</h1>
+</svelte:body>
