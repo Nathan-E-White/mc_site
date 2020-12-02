@@ -1,5 +1,8 @@
 <script>
 	export let segment;
+
+	export let navlists = [];
+	export let header;
 </script>
 
 <style>
@@ -47,15 +50,70 @@
 		display: block;
 	}
 </style>
+<section id=”nav-bar”>
+	<nav class=”navbar main-bgcolor navbar-expand-md navbar-dark”>
+		<a class=”navbar-brand company_brand” href=”/”>
+			{header}
+		</a>
+		<button
+				class=”navbar-toggler”
+				type=”button”
+				data-toggle=”collapse”
+				data-target=”#navbarNav”
+				aria-controls=”navbarNav”
+				aria-expanded=”false”
+				aria-label=”Toggle navigation”>
+			<span class=”navbar-toggler-icon” />
+		</button>
+		<div class=”collapse navbar-collapse” id=”navbarNav”>
+			<ul class=”navbar-nav ml-auto”>
+				{#each navlists as list}
+					<li class=”nav-item”>
+						<a class=”nav-link light-color” href={list.url}>{list.label}</a>
+					</li>
+				{/each}
+			</ul>
+		</div>
+	</nav>
+</section>
 
-<nav>
+<! — — — — — — — — — — — — — — — — — — — — — ->
+<! — — — — — — — — STYLE — — — — — — — — — — — ->
+<! — — — — — — — — — — — — — — — — — — — — — ->
+<style>
+	#nav-bar {
+		position: sticky;
+		top: 0;
+		z-index: 10;
+	}
+	.navbar {
+		padding: 0 20px !important;
+	}
+	.navbar-nav li {
+		padding: 0 0 0 20px;
+	}
+	.navbar-nav li a {
+		font-weight: 600;
+		text-transform: uppercase;
+		float: right;
+		text-align: left;
+	}
+</style>
+
+<section id="nav-bar">
+<nav class="navbar main-bgcolor navbar-expand-md navbar-dark">
 	<ul>
-		<li><a aria-current='{segment === undefined ? "page" : undefined}' href='.'>home</a></li>
-		<li><a aria-current='{segment === "about" ? "page" : undefined}' href='about'>about</a></li>
-		<li><a aria-current='{segment === "contact" ? "page" : undefined}' href='contact'>contact</a></li>
+		<li><a rel=prefetch aria-current='{segment === undefined ? "page" : undefined}' href='.'>home</a></li>
+
+
+
+
+		<li><a rel=prefetch aria-current='{segment === "about" ? "page" : undefined}' href='about'>about</a></li>
+		<li><a rel=prefetch aria-current='{segment === "contact" ? "page" : undefined}' href='contact'>contact</a></li>
 
 		<!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
 		     the blog data when we hover over the link or tap it on a touchscreen -->
 		<li><a rel=prefetch aria-current='{segment === "blog" ? "page" : undefined}' href='blog'>blog</a></li>
 	</ul>
 </nav>
+</section>
