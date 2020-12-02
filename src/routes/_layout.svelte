@@ -1,5 +1,5 @@
 <script>
-	import Nav from '../components/Nav.svelte';
+	import Nav from '../components/NavBar.svelte';
 	import Footer from '../components/Footer.svelte';
 
 	export let segment;
