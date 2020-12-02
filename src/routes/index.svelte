@@ -50,7 +50,7 @@
 
 <figure>
     <img alt='Borat' src='great-success.png'>
-    <figcaption>HIGH FIVE!</figcaption>
+    <figcaption><p><strong>Page coming soon!</strong></p></figcaption>
 </figure>
 
-<p><strong>Page coming soon!</strong></p>
+
