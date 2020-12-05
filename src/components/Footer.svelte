@@ -9,7 +9,7 @@
         <ul>
 
             <!---- About page ---->
-            <li><a rel="prefetch noreferrer noopener"
+            <li><a rel="prefetch"
                    aria-current='{segment === "about" ? "page" : undefined}'
                    href='about'
                    hreflang="en"
@@ -18,18 +18,18 @@
             </li>
 
             <!---- Contact Us Page ---->
-            <li><a rel="prefetch noreferrer noopener"
+            <li><a rel="prefetch"
                    aria-current='{segment === "contact" ? "page" : undefined}'
                    href='contact'
                    hreflang="en"
                    target="_self">
                 Contact
-                </a>
+            </a>
             </li>
 
             <!---- Cookies Policy ---->
-            <li><a rel="prefetch noreferrer noopener"
-                   aria-current='{segment === "cookies" ? "page" : undefined}'
+            <li><a aria-current='{segment === "cookies-policy" ? "page" : undefined}'
+                   rel="prefetch"
                    href="cookies-policy"
                    hreflang="en"
                    target="_self">
@@ -37,7 +37,7 @@
             </li>
 
             <!-- Disclaimers -->
-            <li><a rel="prefetch noreferrer noopener"
+            <li><a rel="prefetch"
                    aria-current='{segment === "disclaimers" ? "page" : undefined}'
                    href="Disclaimers"
                    hreflang="en"
@@ -47,7 +47,7 @@
             </li>
 
             <!-- FAQs -->
-            <li><a rel="prefetch noreferrer noopener"
+            <li><a rel="prefetch"
                    aria-current='{segment === "faqs" ? "page" : undefined}'
                    href="faqs"
                    hreflang="en"
@@ -56,14 +56,14 @@
             </li>
 
             <!-- Privacy Policy -->
-            <li><a rel="prefetch noreferrer noopener"
-                   aria-current="{segment === 'privacy' ? 'page' : undefined}"
+            <li><a aria-current="{segment === 'privacy-policy' ? 'page' : undefined}"
+                   rel="prefetch"
                    href="privacy-policy">
                 Privacy Policy</a>
             </li>
 
             <!-- Site Status -->
-            <li><a rel="prefetch noreferrer noopener"
+            <li><a rel="prefetch"
                    aria-current="{segment === 'status' ? 'page' : undefined}"
                    href="status"
                    hreflang="en"
@@ -76,8 +76,8 @@
             <!--                         Terms of Use                       -->
             <!-- ========================================================== -->
             <li><a
-                    rel="prefetch noreferrer noopener"
-                    aria-current="{segment === 'terms' ? 'page' : undefined}"
+                    aria-current="{segment === 'terms-of-use' ? 'page' : undefined}"
+                    rel="prefetch"
                     href="terms-of-use"
                     hreflang="en"
                     target="_self">
