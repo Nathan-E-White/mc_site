@@ -15,17 +15,17 @@
 </svelte:head>
 
 
-<svelte:body>
+<body>
 
-    <article>
+<article>
 
-        <header>
-            <h1>About Disclaimers</h1>
-            <p>These are general pieces of advice meant for users to take into consideration as they use the site.</p>
-            <p>They are meant to be much more general than the <a href="/terms-of-use">Terms of Use</a> but are still
-                meant to be taken seriously.</p>
-            <p>Unlike the <a href="/code-of-conduct">Code of Conduct</a> these disclaimers are intended to manage
-                expectations, not behavior.</p>
+    <header>
+        <h1>About Disclaimers</h1>
+        <p>These are general pieces of advice meant for users to take into consideration as they use the site.</p>
+        <p>They are meant to be much more general than the <a href="/terms-of-use">Terms of Use</a> but are still
+            meant to be taken seriously.</p>
+        <p>Unlike the <a href="/code-of-conduct">Code of Conduct</a> these disclaimers are intended to manage
+            expectations, not behavior.</p>
         </header>
 
         <section>
@@ -77,10 +77,10 @@
             </p>
         </section>
 
-        <section>
-            <h1>Advertisements</h1>
-            <p></p>
-        </section>
+    <section>
+        <h1>Advertisements</h1>
+        <p></p>
+    </section>
 
-    </article>
-</svelte:body>
+</article>
+</body>

@@ -14,17 +14,17 @@
 
 </svelte:head>
 
-<svelte:body>
-    <article>
-        <header>
-            <h1>About the Cookies Policy</h1>
-            <p>This page is meant to serve as a more detailed explanation of the cookies policy found in the
-                <a href="/terms-of-use">Terms of Use</a>, as well as to provide some additional resources for users that
-                are concerned about privacy and tracking issues.
-            </p>
-        </header>
+<body>
+<article>
+    <header>
+        <h1>About the Cookies Policy</h1>
+        <p>This page is meant to serve as a more detailed explanation of the cookies policy found in the
+            <a href="/terms-of-use">Terms of Use</a>, as well as to provide some additional resources for users that
+            are concerned about privacy and tracking issues.
+        </p>
+    </header>
 
-        <section>
+    <section>
             <h1>What is a Cookie?</h1>
             <p>A cookie is a (sometimes) small piece of text consisting of different characters that is backed by a file
                 somewhere on your computer that is accessible to your browser.</p>
@@ -59,10 +59,10 @@
             <p>We do not currently use cookies at this time.</p>
         </section>
 
-        <section>
-            <h1>Can I control how my browser stores and processes cookies?</h1>
-            <p>Yes. For more information about how to customizer your browser, please visit <a
-                    href="https://www.aboutcookies.org">AboutCookies.org</a></p>
-        </section>
-    </article>
-</svelte:body>
+    <section>
+        <h1>Can I control how my browser stores and processes cookies?</h1>
+        <p>Yes. For more information about how to customizer your browser, please visit <a
+                href="https://www.aboutcookies.org">AboutCookies.org</a></p>
+    </section>
+</article>
+</body>

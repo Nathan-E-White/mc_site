@@ -47,16 +47,16 @@
 </svelte:head>
 
 
-<svelte:body>
+<body>
 
-    <h1>Check back later...</h1>
+<h1>Check back later...</h1>
 
-    <figure>
-        <img alt='Borat' src='great-success.png'>
-        <figcaption><p><strong>Page coming soon!</strong></p></figcaption>
-    </figure>
+<figure>
+    <img alt='Borat' src='great-success.png'>
+    <figcaption><p><strong>Page coming soon!</strong></p></figcaption>
+</figure>
 
-</svelte:body>
+</body>
 
 
 

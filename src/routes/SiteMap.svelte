@@ -13,18 +13,18 @@
     <meta property="site_name" content="Mogul charts">
 </svelte:head>
 
-<svelte:body>
-    <article>
-        <header>
-            <h1>About the Sitemap.</h1>
-            <p>
-                The sitemap is a formal description of the structure of the website. It contains links to pages that
-                users frequently visit, as well as links to some more obscure features that may be of interest to web
-                crawlers and developers, but that regular users won't care to necessarily see.
-            </p>
-        </header>
+<body>
+<article>
+    <header>
+        <h1>About the Sitemap.</h1>
+        <p>
+            The sitemap is a formal description of the structure of the website. It contains links to pages that
+            users frequently visit, as well as links to some more obscure features that may be of interest to web
+            crawlers and developers, but that regular users won't care to necessarily see.
+        </p>
+    </header>
 
-        <section>
+    <section>
             <h1>Site Basic Features</h1>
             <p>
                 The basic features list contains links to pages that practically any business webpage must have to be
@@ -105,10 +105,10 @@
             ways that it was not intended to be used.
         </p>
 
-        <section>
-            <h1>Main Content</h1>
-            <p>This section contains links to subsections that connect the site's main content.</p>
-        </section>
+    <section>
+        <h1>Main Content</h1>
+        <p>This section contains links to subsections that connect the site's main content.</p>
+    </section>
 
-    </article>
-</svelte:body>
+</article>
+</body>

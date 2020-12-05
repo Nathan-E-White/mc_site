@@ -14,18 +14,17 @@
 </svelte:head>
 
 
-<svelte:body>
+<body>
+<article>
+    <header>
+        <h1>About the Code of Conduct</h1>
+        <p>The code of conduct is the part of the Site's <a href="/terms-of-use">Terms of Use</a> that govern
+            expectations for how users of the Site will conduct themselves.</p>
+    </header>
 
-    <article>
-        <header>
-            <h1>About the Code of Conduct</h1>
-            <p>The code of conduct is the part of the Site's <a href="/terms-of-use">Terms of Use</a> that govern
-                expectations for how users of the Site will conduct themselves.</p>
-        </header>
-
-        <section>
-            <h1>Summary</h1>
-            <p>
+    <section>
+        <h1>Summary</h1>
+        <p>
                 For a detailed summary, please see the listings located below on this page, but in summary, the code of
                 conduct specifies a few general ideas.
             </p>
@@ -65,13 +64,13 @@
             <h2>Data-mining</h2>
         </section>
 
-        <section>
-            <h1>Abusive Conduct</h1>
-            <h2>Interactions with other site members</h2>
-            <h2>Interactions with site operators</h2>
-            <h2>Interactions with third parties</h2>
-        </section>
+    <section>
+        <h1>Abusive Conduct</h1>
+        <h2>Interactions with other site members</h2>
+        <h2>Interactions with site operators</h2>
+        <h2>Interactions with third parties</h2>
+    </section>
 
-    </article>
+</article>
 
-</svelte:body>
+</body>

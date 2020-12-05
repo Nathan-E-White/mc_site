@@ -15,17 +15,17 @@
 </svelte:head>
 
 
-<svelte:body>
+<body>
 
-    <article>
-        <header>
-            <h1>About the Terms of Use</h1>
-            <p></p>
-        </header>
+<article>
+    <header>
+        <h1>About the Terms of Use</h1>
+        <p></p>
+    </header>
 
-        <section>
-            <h1>Changes to Terms of Use</h1>
-        </section>
+    <section>
+        <h1>Changes to Terms of Use</h1>
+    </section>
 
         <section>
             <h1>Changes to the Website</h1>
@@ -88,5 +88,5 @@
             </p>
         </section>
 
-    </article>
-</svelte:body>
+</article>
+</body>
