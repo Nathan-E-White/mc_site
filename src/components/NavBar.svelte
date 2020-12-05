@@ -53,12 +53,15 @@
 <section id="nav-bar">
 <nav>
 	<ul>
-
 		<!-- Home page -->
-		<li><a rel=prefetch aria-current='{segment === undefined ? "page" : undefined}' href='.'>home</a></li>
+		<li><a aria-current='{segment === undefined ? "page" : undefined}' href='.' rel="prefetch">home</a></li>
 
 		<!-- Blogs Page -->
-		<li><a rel=prefetch aria-current='{segment === "blog" ? "page" : undefined}' href='blog'>blog</a></li>
+		<li><a aria-current='{segment === "blog" ? "page" : undefined}' href='/blog' rel="prefetch">blog</a></li>
+
+		<!-- SITE MAP -->
+		<li><a aria-current='{segment === "site map" ? "page" : undefined}' href="/site-map" rel="prefetch">site map</a>
+		</li>
 	</ul>
 </nav>
 </section>

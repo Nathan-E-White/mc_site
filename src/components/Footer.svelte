@@ -84,6 +84,20 @@
                 Terms of Use
             </a>
             </li>
+
+            <!-- == -->
+            <!-- CODE OF CONDUCT -->
+            <!-- == -->
+            <li><a
+                    aria-current="{segment === 'code-of-conduct' ? 'page' : undefined}"
+                    href="/code-of-conduct"
+                    hreflang="en"
+                    rel="prefetch"
+                    target="_self">
+                Code of Conduct
+            </a>
+
+            </li>
         </ul>
     </nav>
 </section>
