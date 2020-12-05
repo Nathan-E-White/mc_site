@@ -38,13 +38,13 @@
             </p>
 
             <h2>About Us:</h2>
-            <a href="/about">Link:</a>
+            <a href="/about-us">Link:</a>
             <p>
                 Self explanatory, for users a bit more curious about the site or author's background(s).
             </p>
 
             <h2>Contact Us:</h2>
-            <a href="/contact">Link:</a>
+        <a href="/contact-us">Link:</a>
             <p>
                 Anyone needed basic contact information from us may find it on this page.
             </p>
