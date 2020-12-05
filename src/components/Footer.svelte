@@ -11,7 +11,7 @@
             <!---- About page ---->
             <li><a rel="prefetch"
                    aria-current='{segment === "about" ? "page" : undefined}'
-                   href='about'
+                   href='/about-us'
                    hreflang="en"
                    target="_self">
                 About</a>
@@ -20,7 +20,7 @@
             <!---- Contact Us Page ---->
             <li><a rel="prefetch"
                    aria-current='{segment === "contact" ? "page" : undefined}'
-                   href='contact'
+                   href='/contact-us'
                    hreflang="en"
                    target="_self">
                 Contact
@@ -30,7 +30,7 @@
             <!---- Cookies Policy ---->
             <li><a aria-current='{segment === "cookies-policy" ? "page" : undefined}'
                    rel="prefetch"
-                   href="cookies-policy"
+                   href="/cookies-policy"
                    hreflang="en"
                    target="_self">
                 Cookies Policy</a>
@@ -39,7 +39,7 @@
             <!-- Disclaimers -->
             <li><a rel="prefetch"
                    aria-current='{segment === "disclaimers" ? "page" : undefined}'
-                   href="Disclaimers"
+                   href="/disclaimers"
                    hreflang="en"
                    target="_self"
             >
@@ -49,7 +49,7 @@
             <!-- FAQs -->
             <li><a rel="prefetch"
                    aria-current='{segment === "faqs" ? "page" : undefined}'
-                   href="faqs"
+                   href="/faqs"
                    hreflang="en"
                    target="_self">
                 FAQs</a>
@@ -58,14 +58,14 @@
             <!-- Privacy Policy -->
             <li><a aria-current="{segment === 'privacy-policy' ? 'page' : undefined}"
                    rel="prefetch"
-                   href="privacy-policy">
+                   href="/privacy-policy">
                 Privacy Policy</a>
             </li>
 
             <!-- Site Status -->
             <li><a rel="prefetch"
                    aria-current="{segment === 'status' ? 'page' : undefined}"
-                   href="status"
+                   href="/site-status"
                    hreflang="en"
                    target="_self">
                 Site Status
@@ -78,7 +78,7 @@
             <li><a
                     aria-current="{segment === 'terms-of-use' ? 'page' : undefined}"
                     rel="prefetch"
-                    href="terms-of-use"
+                    href="/terms-of-use"
                     hreflang="en"
                     target="_self">
                 Terms of Use
