@@ -1,14 +1,3 @@
-<script>
-    import { MaterialApp, AppBar, Divider, Button } from "svelte-materialify";
-
-    let theme = "light";
-
-    function toggleTheme(){
-        if(theme === "light") theme = "dark";
-        else theme = "light";
-    }
-</script>
-
 <style>
     h1, figure, p {
         text-align: center;
@@ -59,14 +48,6 @@
 
 
 <svelte:body>
-
-    <MaterialApp {theme}>
-        <AppBar>
-            <span slot="title">Title</span>
-        </AppBar>
-        <br/>
-        <Divider/>
-    </MaterialApp>
 
     <h1>Check back later...</h1>
 
