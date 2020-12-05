@@ -38,13 +38,13 @@
             </p>
 
             <h2>About Us:</h2>
-            <a href="/about-us">Link:</a>
+            <a href="/about">Link:</a>
             <p>
                 Self explanatory, for users a bit more curious about the site or author's background(s).
             </p>
 
             <h2>Contact Us:</h2>
-            <a href="/contact-us">Link:</a>
+            <a href="/contact">Link:</a>
             <p>
                 Anyone needed basic contact information from us may find it on this page.
             </p>
@@ -73,7 +73,7 @@
         <p>This section contains links to pages on the site that describe various legal policies.</p>
 
         <h2>Terms of Use</h2>
-        <a href="/terms-of/use">Link:</a>
+        <a href="/terms-of-use">Link:</a>
         <p>
             The Terms of Use describe the legal relationship between the site and its users.
         </p>
