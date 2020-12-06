@@ -1,13 +1,14 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<urlset>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="https://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://mogulchart.com/about</loc>
+        <loc>https://mogulchart.com/about-us</loc>
     </url>
     <url>
-        <loc>https://mogulchart.com/contact</loc>
+        <loc>https://mogulchart.com/contact-us</loc>
     </url>
     <url>
-        <loc>https://mogulchart.com/status</loc>
+        <loc>https://mogulchart.com/site-status</loc>
     </url>
     <url>
         <loc>https://mogulchart.com/terms-of-use</loc>
@@ -16,15 +17,15 @@
         <loc>https://mogulchart.com/privacy-policy</loc>
     </url>
     <url>
-        <loc>https://mogulchart.com/disclaimer</loc>
+        <loc>https://mogulchart.com/disclaimers</loc>
     </url>
     <url>
         <loc>https://mogulchart.com/cookies-policy</loc>
     </url>
     <url>
-        <loc>https://mogulchart.com/hidden-links</loc>
+        <loc>https://mogulchart.com/site-map</loc>
     </url>
     <url>
-        <loc>https://mogulchart.com/search</loc>
+        <loc>https://mogulchart.com/advanced-search</loc>
     </url>
 </urlset>
