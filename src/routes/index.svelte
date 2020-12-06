@@ -50,12 +50,13 @@
 <body>
 
 <h1>Check back later...</h1>
-
+<p><strong>Page coming soon!</strong></p>
+<!--
 <figure>
     <img alt='Borat' src='great-success.png'>
-    <figcaption><p><strong>Page coming soon!</strong></p></figcaption>
+    <figcaption></figcaption>
 </figure>
-
+-->
 </body>
 
 
