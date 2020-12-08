@@ -24,13 +24,13 @@
         /* TODO: Status: Integer http return code */
         /* TODO: Online: Boolean if site is currently ok */
         /* TODO: Checked: Timestamp when page was last checked */
-        {label: 1, link: `<a href="/">Home Page</a>`}, /* status: 200, online: true, checked: undefined}, */
-        {label: 2, link: `<a href="/site-map">Site Map</a>`},
-        {label: 3, link: `<a href="/about-us">About Us</a>`},
-        {label: 4, link: `<a href="/contact-us">Contact us</a>`},
-        {label: 5, link: `<a href="/terms-of-use">Terms of use</a>`},
-        {label: 6, link: `<a href="/privacy-policy">Privacy Policy</a>`},
-        {label: 7, link: `<a href="/code-of-conduct">Code of Conduct</a>`}
+        {label: 1, link: "<a href=\"/\">Home Page</a>"},
+        {label: 2, link: "<a href=\"/site-map\">Site Map</a>"},
+        {label: 3, link: "<a href=\"/about-us\">About Us</a>"},
+        {label: 4, link: "<a href=\"/contact-us\">Contact us</a>"},
+        {label: 5, link: "<a href=\"/terms-of-use\">Terms of use</a>"},
+        {label: 6, link: "<a href=\"/privacy-policy\">Privacy Policy</a>"},
+        {label: 7, link: "<a href=\"/code-of-conduct\">Code of Conduct</a>"}
     ];
 
     /* Holds table sort state. Initialized to reflect table sorted by id column ascending */
