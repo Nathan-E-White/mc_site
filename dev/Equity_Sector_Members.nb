@@ -1,0 +1,960 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     56434,        950]
+NotebookOptionsPosition[     54800,        916]
+NotebookOutlinePosition[     55205,        932]
+CellTagsIndexPosition[     55162,        929]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"FinancialData", "[", "\"\<Sectors\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.8163657955544467`*^9, 3.8163658015205927`*^9}},
+ CellLabel->
+  "In[899]:=",ExpressionUUID->"f2629849-9170-4d7b-8601-5b0e254d181c"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"AdvertisingAgencies\"\>", ",", "\<\"AerospaceAndDefense\"\>", 
+   ",", "\<\"AgriculturalInputs\"\>", ",", "\<\"Airlines\"\>", 
+   ",", "\<\"AirportsAndAirServices\"\>", ",", "\<\"Aluminum\"\>", 
+   ",", "\<\"ApparelManufacturing\"\>", ",", "\<\"ApparelRetail\"\>", 
+   ",", "\<\"ApparelStores\"\>", ",", "\<\"AssetManagement\"\>", 
+   ",", "\<\"AutoAndTruckDealerships\"\>", ",", "\<\"AutoManufacturers\"\>", 
+   ",", "\<\"AutoParts\"\>", ",", "\<\"BanksDiversified\"\>", 
+   ",", "\<\"BanksGlobal\"\>", ",", "\<\"BanksRegional\"\>", 
+   ",", "\<\"BanksRegionalAsia\"\>", ",", "\<\"BanksRegionalEurope\"\>", 
+   ",", "\<\"BanksRegionalLatinAmerica\"\>", ",", "\<\"BanksRegionalUS\"\>", 
+   ",", "\<\"BeveragesBrewers\"\>", ",", "\<\"BeveragesNonAlcoholic\"\>", 
+   ",", "\<\"BeveragesSoftDrinks\"\>", 
+   ",", "\<\"BeveragesWineriesAndDistilleries\"\>", 
+   ",", "\<\"Biotechnology\"\>", ",", "\<\"Broadcasting\"\>", 
+   ",", "\<\"BroadcastingRadio\"\>", ",", "\<\"BroadcastingTV\"\>", 
+   ",", "\<\"BuildingMaterials\"\>", 
+   ",", "\<\"BuildingProductsAndEquipment\"\>", 
+   ",", "\<\"BusinessEquipment\"\>", 
+   ",", "\<\"BusinessEquipmentAndSupplies\"\>", 
+   ",", "\<\"BusinessServices\"\>", ",", "\<\"CapitalMarkets\"\>", 
+   ",", "\<\"Chemicals\"\>", ",", "\<\"Coal\"\>", ",", "\<\"CokingCoal\"\>", 
+   ",", "\<\"CommunicationEquipment\"\>", ",", "\<\"ComputerDistribution\"\>",
+    ",", "\<\"ComputerHardware\"\>", ",", "\<\"ComputerSystems\"\>", 
+   ",", "\<\"Confectioners\"\>", ",", "\<\"Conglomerates\"\>", 
+   ",", "\<\"ConsultingServices\"\>", ",", "\<\"ConsumerElectronics\"\>", 
+   ",", "\<\"Copper\"\>", ",", "\<\"CreditServices\"\>", 
+   ",", "\<\"DataStorage\"\>", ",", "\<\"DepartmentStores\"\>", 
+   ",", "\<\"DiagnosticsAndResearch\"\>", ",", "\<\"DiscountStores\"\>", 
+   ",", "\<\"DiversifiedIndustrials\"\>", 
+   ",", "\<\"DrugManufacturersGeneral\"\>", 
+   ",", "\<\"DrugManufacturersMajor\"\>", 
+   ",", "\<\"DrugManufacturersSpecialtyAndGeneric\"\>", 
+   ",", "\<\"EducationAndTrainingServices\"\>", 
+   ",", "\<\"ElectricalEquipmentAndParts\"\>", 
+   ",", "\<\"ElectronicComponents\"\>", 
+   ",", "\<\"ElectronicGamingAndMultimedia\"\>", 
+   ",", "\<\"ElectronicsAndComputerDistribution\"\>", 
+   ",", "\<\"ElectronicsDistribution\"\>", 
+   ",", "\<\"EngineeringAndConstruction\"\>", ",", "\<\"Entertainment\"\>", 
+   ",", "\<\"FarmAndConstructionEquipment\"\>", 
+   ",", "\<\"FarmAndHeavyConstructionMachinery\"\>", 
+   ",", "\<\"FarmProducts\"\>", ",", "\<\"FinancialConglomerates\"\>", 
+   ",", "\<\"FinancialDataAndStockExchanges\"\>", 
+   ",", "\<\"FoodDistribution\"\>", ",", "\<\"FootwearAndAccessories\"\>", 
+   ",", "\<\"FurnishingsFixturesAndAppliances\"\>", ",", "\<\"Gambling\"\>", 
+   ",", "\<\"Gold\"\>", ",", "\<\"GroceryStores\"\>", 
+   ",", "\<\"HealthcarePlans\"\>", ",", "\<\"HealthInformationServices\"\>", 
+   ",", "\<\"HomeFurnishingsAndFixtures\"\>", 
+   ",", "\<\"HomeImprovementRetail\"\>", ",", "\<\"HomeImprovementStores\"\>",
+    ",", "\<\"HouseholdAndPersonalProducts\"\>", 
+   ",", "\<\"IndustrialDistribution\"\>", 
+   ",", "\<\"IndustrialMetalsAndMinerals\"\>", 
+   ",", "\<\"InformationTechnologyServices\"\>", 
+   ",", "\<\"InfrastructureOperations\"\>", ",", "\<\"InsuranceBrokers\"\>", 
+   ",", "\<\"InsuranceDiversified\"\>", ",", "\<\"InsuranceLife\"\>", 
+   ",", "\<\"InsurancePropertyAndCasualty\"\>", 
+   ",", "\<\"InsuranceReinsurance\"\>", ",", "\<\"InsuranceSpecialty\"\>", 
+   ",", "\<\"IntegratedFreightAndLogistics\"\>", 
+   ",", "\<\"IntegratedShippingAndLogistics\"\>", 
+   ",", "\<\"InternetContentAndInformation\"\>", 
+   ",", "\<\"InternetRetail\"\>", ",", "\<\"Leisure\"\>", 
+   ",", "\<\"Lodging\"\>", ",", "\<\"LongTermCareFacilities\"\>", 
+   ",", "\<\"LumberAndWoodProduction\"\>", ",", "\<\"LuxuryGoods\"\>", 
+   ",", "\<\"MarineShipping\"\>", ",", "\<\"MarketingServices\"\>", 
+   ",", "\<\"MediaDiversified\"\>", ",", "\<\"MedicalCare\"\>", 
+   ",", "\<\"MedicalCareFacilities\"\>", ",", "\<\"MedicalDevices\"\>", 
+   ",", "\<\"MedicalDistribution\"\>", 
+   ",", "\<\"MedicalInstrumentsAndSupplies\"\>", 
+   ",", "\<\"MetalFabrication\"\>", ",", "\<\"MortgageFinance\"\>", 
+   ",", "\<\"OilAndGasDrilling\"\>", ",", "\<\"OilAndGasEAndP\"\>", 
+   ",", "\<\"OilAndGasEquipmentAndServices\"\>", 
+   ",", "\<\"OilAndGasIntegrated\"\>", ",", "\<\"OilAndGasMidstream\"\>", 
+   ",", "\<\"OilAndGasRefiningAndMarketing\"\>", 
+   ",", "\<\"OtherIndustrialMetalsAndMining\"\>", 
+   ",", "\<\"OtherPreciousMetalsAndMining\"\>", ",", "\<\"PackagedFoods\"\>", 
+   ",", "\<\"PackagingAndContainers\"\>", 
+   ",", "\<\"PaperAndPaperProducts\"\>", ",", "\<\"PayTV\"\>", 
+   ",", "\<\"PersonalServices\"\>", ",", "\<\"PharmaceuticalRetailers\"\>", 
+   ",", "\<\"PollutionAndTreatmentControls\"\>", ",", "\<\"Publishing\"\>", 
+   ",", "\<\"Railroads\"\>", ",", "\<\"RealEstateDevelopment\"\>", 
+   ",", "\<\"RealEstateDiversified\"\>", ",", "\<\"RealEstateGeneral\"\>", 
+   ",", "\<\"RealEstateServices\"\>", ",", "\<\"RecreationalVehicles\"\>", 
+   ",", "\<\"REITDiversified\"\>", ",", "\<\"REITHealthcareFacilities\"\>", 
+   ",", "\<\"REITHotelAndMotel\"\>", ",", "\<\"REITIndustrial\"\>", 
+   ",", "\<\"REITMortgage\"\>", ",", "\<\"REITOffice\"\>", 
+   ",", "\<\"REITResidential\"\>", ",", "\<\"REITRetail\"\>", 
+   ",", "\<\"REITSpecialty\"\>", ",", "\<\"RentalAndLeasingServices\"\>", 
+   ",", "\<\"ResidentialConstruction\"\>", ",", "\<\"ResortsAndCasinos\"\>", 
+   ",", "\<\"Restaurants\"\>", ",", "\<\"RubberAndPlastics\"\>", 
+   ",", "\<\"ScientificAndTechnicalInstruments\"\>", 
+   ",", "\<\"SecurityAndProtectionServices\"\>", 
+   ",", "\<\"SemiconductorEquipmentAndMaterials\"\>", 
+   ",", "\<\"Semiconductors\"\>", ",", "\<\"ShellCompanies\"\>", 
+   ",", "\<\"ShippingAndPorts\"\>", ",", "\<\"Silver\"\>", 
+   ",", "\<\"SoftwareApplication\"\>", ",", "\<\"SoftwareInfrastructure\"\>", 
+   ",", "\<\"Solar\"\>", ",", "\<\"SpecialtyBusinessServices\"\>", 
+   ",", "\<\"SpecialtyChemicals\"\>", ",", "\<\"SpecialtyFinance\"\>", 
+   ",", "\<\"SpecialtyIndustrialMachinery\"\>", 
+   ",", "\<\"SpecialtyRetail\"\>", 
+   ",", "\<\"StaffingAndEmploymentServices\"\>", 
+   ",", "\<\"StaffingAndOutsourcingServices\"\>", ",", "\<\"Steel\"\>", 
+   ",", "\<\"TelecomServices\"\>", ",", "\<\"TextileManufacturing\"\>", 
+   ",", "\<\"ThermalCoal\"\>", ",", "\<\"Tobacco\"\>", 
+   ",", "\<\"ToolsAndAccessories\"\>", ",", "\<\"TravelServices\"\>", 
+   ",", "\<\"Trucking\"\>", ",", "\<\"Uranium\"\>", 
+   ",", "\<\"UtilitiesDiversified\"\>", 
+   ",", "\<\"UtilitiesIndependentPowerProducers\"\>", 
+   ",", "\<\"UtilitiesRegulatedElectric\"\>", 
+   ",", "\<\"UtilitiesRegulatedGas\"\>", 
+   ",", "\<\"UtilitiesRegulatedWater\"\>", ",", "\<\"UtilitiesRenewable\"\>", 
+   ",", "\<\"WasteManagement\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{3.8163658044811144`*^9},
+ CellLabel->
+  "Out[899]=",ExpressionUUID->"d9f26641-2fa6-4521-a8ed-f98ce63053a7"]
+}, Open  ]],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"CompaniesInIndustry", "[", "industry_String", "]"}], ":=", 
+   RowBox[{
+    RowBox[{"CompaniesInIndustry", "[", "industry", "]"}], "=", 
+    RowBox[{"FinancialData", "[", 
+     RowBox[{"industry", ",", "\"\<Members\>\""}], "]"}]}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"CompanyName", "[", "symb_", "]"}], ":=", 
+  RowBox[{
+   RowBox[{"CompanyName", "[", "symb", "]"}], "=", 
+   RowBox[{"FinancialData", "[", 
+    RowBox[{"symb", ",", "\"\<Name\>\""}], "]"}]}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"CompanyTicker", "[", "symb_", "]"}], ":=", 
+  RowBox[{
+   RowBox[{"CompanyTicker", "[", "symb", "]"}], "=", 
+   RowBox[{"FinancialData", "[", 
+    RowBox[{"symb", ",", "\"\<Symbol\>\""}], "]"}]}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"CompanyExchange", "[", "symb_", "]"}], ":=", 
+  RowBox[{
+   RowBox[{"CompanyExchange", "[", "symb", "]"}], "=", 
+   RowBox[{"FinancialData", "[", 
+    RowBox[{"symb", ",", "\"\<Exchange\>\""}], 
+    "]"}]}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"CorporateEntity", "[", "symb_", "]"}], ":=", 
+  RowBox[{
+   RowBox[{"CorporateEntity", "[", "symb", "]"}], "=", 
+   RowBox[{"FinancialData", "[", 
+    RowBox[{"symb", ",", "\"\<Company\>\""}], 
+    "]"}]}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"IPODate", "[", "symb_", "]"}], ":=", 
+  RowBox[{
+   RowBox[{"IPODate", "[", "symb", "]"}], "=", 
+   RowBox[{"FinancialData", "[", 
+    RowBox[{"symb", ",", "\"\<IPODate\>\""}], "]"}]}]}]}], "Input",
+ CellChangeTimes->{{3.8163658342927914`*^9, 3.816365869444152*^9}, {
+  3.8163661828264265`*^9, 3.8163662015809*^9}, {3.816366530178835*^9, 
+  3.816366551480496*^9}, {3.8163666254963427`*^9, 3.8163666509725924`*^9}, {
+  3.8163668018619356`*^9, 3.816366819621086*^9}, {3.8163681582548018`*^9, 
+  3.8163681772461243`*^9}, {3.8163683133554077`*^9, 3.816368333342441*^9}},
+ CellLabel->
+  "In[1001]:=",ExpressionUUID->"151389d4-ee03-4a16-8d17-e1c4a774bdd2"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"CompanyName", "[", "\"\<SS:600029\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.8163662078140755`*^9, 3.816366246020434*^9}},
+ CellLabel->
+  "In[911]:=",ExpressionUUID->"a9174478-d300-45f9-8239-3f3bffc15335"],
+
+Cell[BoxData["\<\"China Southern Airlines\"\>"], "Output",
+ CellChangeTimes->{3.816366216105259*^9, 3.816366247299446*^9},
+ CellLabel->
+  "Out[911]=",ExpressionUUID->"4017e451-ebb6-4bd0-8aaf-b1cbfa388713"]
+}, Open  ]],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"MCProcessEquitySymbol", "[", "symb_", "]"}], ":=", 
+  RowBox[{"StringRiffle", "[", 
+   RowBox[{
+    RowBox[{"ToLowerCase", "[", 
+     RowBox[{"StringSplit", "[", 
+      RowBox[{"symb", ",", "\"\<:\>\""}], "]"}], "]"}], ",", "\"\<-\>\""}], 
+   "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"MCEquityLink", "[", 
+   RowBox[{"prefix_", ",", "symb_"}], "]"}], ":=", 
+  RowBox[{"TemplateApply", "[", 
+   RowBox[{
+    RowBox[{
+    "StringTemplate", "[", 
+     "\"\<<a href=\\\"/<*#pfx*>/<*#sym*>\\\"><*#name*></a>\>\"", "]"}], ",", 
+    RowBox[{"<|", 
+     RowBox[{
+      RowBox[{"\"\<pfx\>\"", "\[Rule]", "prefix"}], ",", 
+      RowBox[{"\"\<sym\>\"", "\[Rule]", 
+       RowBox[{"MCProcessEquitySymbol", "[", "symb", "]"}]}], ",", 
+      RowBox[{"\"\<name\>\"", "\[Rule]", 
+       RowBox[{"CompanyName", "[", "symb", "]"}]}]}], "|>"}]}], 
+   "]"}]}]}], "Input",
+ CellChangeTimes->{{3.816366987528262*^9, 3.8163670253693085`*^9}, {
+  3.8163670689733887`*^9, 3.816367219489744*^9}, {3.8163672649951954`*^9, 
+  3.816367420169367*^9}, {3.816367481864363*^9, 3.8163674952776933`*^9}, {
+  3.8163679378665605`*^9, 3.816367993256242*^9}, {3.816368124712101*^9, 
+  3.81636812737226*^9}},
+ CellLabel->
+  "In[991]:=",ExpressionUUID->"a72208f0-0831-4e67-b182-15eacf621eb8"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"MCEquityLink", "[", 
+  RowBox[{"\"\<assets/equities/data\>\"", ",", "\"\<NYSE:XOM\>\""}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.81636722177724*^9, 3.8163672515376487`*^9}, {
+  3.816367541046588*^9, 3.816367568383746*^9}},
+ CellLabel->
+  "In[993]:=",ExpressionUUID->"96d650ff-aa3f-4ad1-aa58-4af3bdf257c2"],
+
+Cell[BoxData["\<\"<a href=\\\"/assets/equities/data/nyse-xom\\\">Exxon \
+Mobil</a>\"\>"], "Output",
+ CellChangeTimes->{{3.816367252611367*^9, 3.816367271665532*^9}, {
+   3.8163673117821803`*^9, 3.816367345016267*^9}, {3.816367377452727*^9, 
+   3.816367422375899*^9}, {3.8163674894496975`*^9, 3.816367497509472*^9}, {
+   3.816367543543419*^9, 3.8163675724300194`*^9}, 3.816368139193217*^9},
+ CellLabel->
+  "Out[993]=",ExpressionUUID->"70bc029c-2efe-418e-8219-25c5021500fc"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"indList", "=", 
+   RowBox[{"Table", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"ind", "\[Rule]", 
+      RowBox[{"With", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"ticks", "=", 
+          RowBox[{"CompaniesInIndustry", "[", "ind", "]"}]}], "}"}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{"Table", "[", 
+         RowBox[{
+          RowBox[{"<|", "\[IndentingNewLine]", 
+           RowBox[{
+            RowBox[{"\"\<Symbol\>\"", "\[Rule]", "t"}], ",", 
+            "\[IndentingNewLine]", 
+            RowBox[{"\"\<Exchange\>\"", "\[Rule]", 
+             RowBox[{"CompanyExchange", "[", "t", "]"}]}], ",", 
+            "\[IndentingNewLine]", 
+            RowBox[{"\"\<Name\>\"", "\[Rule]", 
+             RowBox[{"CompanyName", "[", "t", "]"}]}], ",", 
+            "\[IndentingNewLine]", 
+            RowBox[{"\"\<MCLink\>\"", "\[Rule]", 
+             RowBox[{"MCEquityLink", "[", 
+              RowBox[{"\"\<assets/equities/data\>\"", ",", "t"}], "]"}]}]}], 
+           "\[IndentingNewLine]", "|>"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"t", ",", "ticks"}], "}"}]}], "]"}]}], 
+       "\[IndentingNewLine]", "]"}]}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{"ind", ",", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"FinancialData", "[", "\"\<Sectors\>\"", "]"}], "[", 
+         RowBox[{"[", 
+          RowBox[{"19", ";;", "23"}], "]"}], "]"}], ")"}]}], "}"}]}], 
+    "\[IndentingNewLine]", "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.8163659336778316`*^9, 3.8163659589399457`*^9}, {
+  3.8163659915094104`*^9, 3.8163659950566697`*^9}, {3.816366101772889*^9, 
+  3.8163661205574975`*^9}, {3.816366165004327*^9, 3.8163661732517786`*^9}, {
+  3.816366271912403*^9, 3.8163664996651807`*^9}, {3.8163665613927593`*^9, 
+  3.8163665643968477`*^9}, {3.8163666583370132`*^9, 3.8163666639186983`*^9}, {
+  3.81636679272901*^9, 3.8163668325336533`*^9}, {3.8163669425338063`*^9, 
+  3.816366984217171*^9}, {3.816367883153824*^9, 3.8163679026182423`*^9}, {
+  3.8163680762041063`*^9, 3.8163680765861835`*^9}, {3.8163681899095354`*^9, 
+  3.8163681999867163`*^9}, {3.8163683389059935`*^9, 3.8163683482631164`*^9}, {
+  3.8163684938544436`*^9, 3.8163684949655113`*^9}},
+ CellLabel->
+  "In[1012]:=",ExpressionUUID->"dfa2bdea-66f9-4a2c-ab65-6fc4b828bc18"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"target", "=", 
+   RowBox[{"FileNameJoin", "[", 
+    RowBox[{"{", 
+     RowBox[{
+     "\"\<C:\>\"", ",", "\"\<Users\>\"", ",", "\"\<nwnn4\>\"", ",", 
+      "\"\<Desktop\>\"", ",", "\"\<WEBSITE_2\>\"", ",", 
+      "\"\<equity_sector_members.json\>\""}], "}"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Export", "[", 
+   RowBox[{"target", ",", "indList"}], "]"}], ";"}]}], "Input",
+ CellChangeTimes->{{3.8163684228454466`*^9, 3.8163684877459984`*^9}},
+ CellLabel->
+  "In[1013]:=",ExpressionUUID->"58d57024-c810-47a7-94d7-55667e135ffe"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ExportString", "[", 
+  RowBox[{"indList", ",", "\"\<JSON\>\""}], "]"}]], "Input",
+ CellChangeTimes->{{3.8163659965122147`*^9, 3.816366047628889*^9}},
+ CellLabel->
+  "In[1008]:=",ExpressionUUID->"57eb2e78-c27e-42c4-85c2-916a8135b923"],
+
+Cell[BoxData["\<\"{\\n\\t\\\"BanksRegionalUS\\\":[\\n\\t\\t{\\n\\t\\t\\t\\\"\
+Symbol\\\":\\\"F:3B5\\\",\\n\\t\\t\\t\\\"Exchange\\\":\\\"\
+FrankfurtStockExchange\\\",\\n\\t\\t\\t\\\"Name\\\":\\\"IGEA Pharma \
+NV\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/f-3b5\\\\\\\">IGEA Pharma \
+NV<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"NASDAQ:FCAL\
+\\\",\\n\\t\\t\\t\\\"Exchange\\\":\\\"Nasdaq\\\",\\n\\t\\t\\t\\\"Name\\\":\\\"\
+First Trust California Municipal High Income ETF\\\",\\n\\t\\t\\t\\\"MCLink\\\
+\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/nasdaq-fcal\\\\\\\">First \
+Trust California Municipal High Income \
+ETF<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"PA:KEY\\\",\
+\\n\\t\\t\\t\\\"Exchange\\\":\\\"ParisStockExchange\\\",\\n\\t\\t\\t\\\"Name\\\
+\":\\\"Keyrus\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/pa-key\\\\\\\">Keyrus<\\\\/\
+a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"PA:MTB\\\",\\n\\t\\\
+t\\t\\\"Exchange\\\":\\\"ParisStockExchange\\\",\\n\\t\\t\\t\\\"Name\\\":\\\"\
+LYXOR EUROGOV 35Y\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/pa-mtb\\\\\\\">LYXOR \
+EUROGOV 35Y<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"PA:\
+MWO\\\",\\n\\t\\t\\t\\\"Exchange\\\":\\\"ParisStockExchange\\\",\\n\\t\\t\\t\\\
+\"Name\\\":\\\"LYXOR EPRA G DEV\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a href=\\\
+\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/pa-mwo\\\\\\\">LYXOR EPRA G \
+DEV<\\\\/a>\\\"\\n\\t\\t}\\n\\t],\\n\\t\\\"BeveragesBrewers\\\":[\\n\\t\\t{\\\
+n\\t\\t\\t\\\"Symbol\\\":\\\"DE:1NBA\\\",\\n\\t\\t\\t\\\"Exchange\\\":\\\"\
+Xetra\\\",\\n\\t\\t\\t\\\"Name\\\":\\\"Anheuser-Busch InBev SA\\\\/NV\\\",\\n\
+\\t\\t\\t\\\"MCLink\\\":\\\"<a href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\
+\\\\/de-1nba\\\\\\\">Anheuser-Busch InBev SA\\\\/NV<\\\\/a>\\\"\\n\\t\\t},\\n\
+\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"DE:HNK1\\\",\\n\\t\\t\\t\\\"Exchange\\\"\
+:\\\"Xetra\\\",\\n\\t\\t\\t\\\"Name\\\":\\\"Heineken \
+NV\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/de-hnk1\\\\\\\">Heineken \
+NV<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"DE:TSI\\\",\
+\\n\\t\\t\\t\\\"Exchange\\\":\\\"Xetra\\\",\\n\\t\\t\\t\\\"Name\\\":\\\"\
+Tsingtao Brewery Co Ltd\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a href=\\\\\\\"\\\
+\\/assets\\\\/equities\\\\/data\\\\/de-tsi\\\\\\\">Tsingtao Brewery Co Ltd<\\\
+\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"F:0R1\\\",\\n\\t\
+\\t\\t\\\"Exchange\\\":\\\"FrankfurtStockExchange\\\",\\n\\t\\t\\t\\\"Name\\\"\
+:\\\"Royal UNIBREW A\\\\/S\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/f-0r1\\\\\\\">Royal \
+UNIBREW A\\\\/S<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\
+\"F:1NBA\\\",\\n\\t\\t\\t\\\"Exchange\\\":\\\"FrankfurtStockExchange\\\",\\n\\\
+t\\t\\t\\\"Name\\\":\\\"Anheuser-Busch InBev \
+SA\\\\/NV\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/f-1nba\\\\\\\">Anheuser-\
+Busch InBev \
+SA\\\\/NV<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"F:\
+4H5\\\",\\n\\t\\t\\t\\\"Exchange\\\":\\\"FrankfurtStockExchange\\\",\\n\\t\\t\
+\\t\\\"Name\\\":\\\"Heineken Holding NV\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/f-4h5\\\\\\\">Heineken \
+Holding NV<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"F:\
+7SN\\\",\\n\\t\\t\\t\\\"Exchange\\\":\\\"FrankfurtStockExchange\\\",\\n\\t\\t\
+\\t\\\"Name\\\":\\\"Suntory Beverage & Food \
+Ltd\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/f-7sn\\\\\\\">Suntory \
+Beverage & Food \
+Ltd<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"F:ABW\\\",\
+\\n\\t\\t\\t\\\"Exchange\\\":\\\"FrankfurtStockExchange\\\",\\n\\t\\t\\t\\\"\
+Name\\\":\\\"Asahi\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/f-abw\\\\\\\">Asahi<\\\\/a>\
+\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"F:AMNA\\\",\\n\\t\\t\\\
+t\\\"Exchange\\\":\\\"FrankfurtStockExchange\\\",\\n\\t\\t\\t\\\"Name\\\":\\\"\
+Ambev SA\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/f-amna\\\\\\\">Ambev SA<\\\
+\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"F:BBEA\\\",\\n\\\
+t\\t\\t\\\"Exchange\\\":\\\"FrankfurtStockExchange\\\",\\n\\t\\t\\t\\\"Name\\\
+\":\\\"Boston Beer Co Inc\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a href=\\\\\\\"\
+\\\\/assets\\\\/equities\\\\/data\\\\/f-bbea\\\\\\\">Boston Beer Co \
+Inc<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"F:CBGA\\\",\
+\\n\\t\\t\\t\\\"Exchange\\\":\\\"FrankfurtStockExchange\\\",\\n\\t\\t\\t\\\"\
+Name\\\":\\\"Carlsberg A\\\\/S\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/f-cbga\\\\\\\">Carlsberg A\
+\\\\/S<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"F:CBGB\\\
+\",\\n\\t\\t\\t\\\"Exchange\\\":\\\"FrankfurtStockExchange\\\",\\n\\t\\t\\t\\\
+\"Name\\\":\\\"Carlsberg A\\\\/S\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/f-cbgb\\\\\\\">Carlsberg A\
+\\\\/S<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"F:CHK\\\
+\",\\n\\t\\t\\t\\\"Exchange\\\":\\\"FrankfurtStockExchange\\\",\\n\\t\\t\\t\\\
+\"Name\\\":\\\"China Resources Beer (Holdings) Co \
+Ltd\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/f-chk\\\\\\\">China \
+Resources Beer (Holdings) Co Ltd<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\
+\\\"Symbol\\\":\\\"F:CVU\\\",\\n\\t\\t\\t\\\"Exchange\\\":\\\"\
+FrankfurtStockExchange\\\",\\n\\t\\t\\t\\\"Name\\\":\\\"United Breweries Co \
+Inc\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/f-cvu\\\\\\\">United \
+Breweries Co \
+Inc<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"F:DPK\\\",\
+\\n\\t\\t\\t\\\"Exchange\\\":\\\"FrankfurtStockExchange\\\",\\n\\t\\t\\t\\\"\
+Name\\\":\\\"Dynasty Fine Wines Group \
+Ltd\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/f-dpk\\\\\\\">Dynasty Fine \
+Wines Group Ltd<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\
+\"F:FOMA\\\",\\n\\t\\t\\t\\\"Exchange\\\":\\\"FrankfurtStockExchange\\\",\\n\\\
+t\\t\\t\\\"Name\\\":\\\"Fomento Economico Mexicano SAB de CV\\\",\\n\\t\\t\\t\
+\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/f-foma\\\\\\\">Fomento \
+Economico Mexicano SAB de \
+CV<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"F:FOMC\\\",\
+\\n\\t\\t\\t\\\"Exchange\\\":\\\"FrankfurtStockExchange\\\",\\n\\t\\t\\t\\\"\
+Name\\\":\\\"Fomento Economico Mexicano SAB de \
+CV\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/f-fomc\\\\\\\">Fomento \
+Economico Mexicano SAB de \
+CV<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"F:GCC\\\",\\\
+n\\t\\t\\t\\\"Exchange\\\":\\\"FrankfurtStockExchange\\\",\\n\\t\\t\\t\\\"\
+Name\\\":\\\"C&C Group PLC\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/f-gcc\\\\\\\">C&C Group \
+PLC<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"F:GUW\\\",\
+\\n\\t\\t\\t\\\"Exchange\\\":\\\"FrankfurtStockExchange\\\",\\n\\t\\t\\t\\\"\
+Name\\\":\\\"Guangdong Land Holdings \
+Ltd\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/f-guw\\\\\\\">Guangdong \
+Land Holdings Ltd<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\
+\\\"F:HNK1\\\",\\n\\t\\t\\t\\\"Exchange\\\":\\\"FrankfurtStockExchange\\\",\\\
+n\\t\\t\\t\\\"Name\\\":\\\"Heineken NV\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/f-hnk1\\\\\\\">Heineken \
+NV<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"F:HNK2\\\",\
+\\n\\t\\t\\t\\\"Exchange\\\":\\\"FrankfurtStockExchange\\\",\\n\\t\\t\\t\\\"\
+Name\\\":\\\"Heineken NV\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/f-hnk2\\\\\\\">Heineken \
+NV<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"F:ITKA\\\",\
+\\n\\t\\t\\t\\\"Exchange\\\":\\\"FrankfurtStockExchange\\\",\\n\\t\\t\\t\\\"\
+Name\\\":\\\"Anheuser-Busch InBev SA\\\\/NV\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\
+\"<a href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/f-itka\\\\\\\">\
+Anheuser-Busch InBev SA\\\\/NV<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\
+\"Symbol\\\":\\\"F:KIR\\\",\\n\\t\\t\\t\\\"Exchange\\\":\\\"\
+FrankfurtStockExchange\\\",\\n\\t\\t\\t\\\"Name\\\":\\\"Kirin Holdings Co Ltd\
+\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/f-kir\\\\\\\">Kirin \
+Holdings Co Ltd<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\
+\"F:NY7\\\",\\n\\t\\t\\t\\\"Exchange\\\":\\\"FrankfurtStockExchange\\\",\\n\\\
+t\\t\\t\\\"Name\\\":\\\"Molson Coors Beverage Co\\\",\\n\\t\\t\\t\\\"MCLink\\\
+\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/f-ny7\\\\\\\">Molson Coors \
+Beverage Co<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"F:\
+SBW\\\",\\n\\t\\t\\t\\\"Exchange\\\":\\\"FrankfurtStockExchange\\\",\\n\\t\\t\
+\\t\\\"Name\\\":\\\"Sapporo Holdings \
+Ltd\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/f-sbw\\\\\\\">Sapporo \
+Holdings Ltd<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"F:\
+TAX\\\",\\n\\t\\t\\t\\\"Exchange\\\":\\\"FrankfurtStockExchange\\\",\\n\\t\\t\
+\\t\\\"Name\\\":\\\"Takara Holdings Inc\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/f-tax\\\\\\\">Takara \
+Holdings Inc<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"F:\
+TSI\\\",\\n\\t\\t\\t\\\"Exchange\\\":\\\"FrankfurtStockExchange\\\",\\n\\t\\t\
+\\t\\\"Name\\\":\\\"Tsingtao Brewery Co Ltd\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\
+\"<a href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/f-tsi\\\\\\\">\
+Tsingtao Brewery Co \
+Ltd<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"HK:00124\\\
+\",\\n\\t\\t\\t\\\"Exchange\\\":\\\"HongKongStockExchange\\\",\\n\\t\\t\\t\\\"\
+Name\\\":\\\"Guangdong Land Holdings \
+Ltd\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/hk-00124\\\\\\\">Guangdong \
+Land Holdings Ltd<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\
+\\\"HK:00168\\\",\\n\\t\\t\\t\\\"Exchange\\\":\\\"HongKongStockExchange\\\",\\\
+n\\t\\t\\t\\\"Name\\\":\\\"Tsingtao Brewery Co Ltd\\\",\\n\\t\\t\\t\\\"MCLink\
+\\\":\\\"<a href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/hk-00168\\\\\\\
+\">Tsingtao Brewery Co \
+Ltd<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"HK:00291\\\
+\",\\n\\t\\t\\t\\\"Exchange\\\":\\\"HongKongStockExchange\\\",\\n\\t\\t\\t\\\"\
+Name\\\":\\\"China Resources Beer (Holdings) Co \
+Ltd\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/hk-00291\\\\\\\">China \
+Resources Beer (Holdings) Co Ltd<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\
+\\\"Symbol\\\":\\\"HK:00828\\\",\\n\\t\\t\\t\\\"Exchange\\\":\\\"\
+HongKongStockExchange\\\",\\n\\t\\t\\t\\\"Name\\\":\\\"Dynasty Fine Wines \
+Group Ltd\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/hk-00828\\\\\\\">Dynasty \
+Fine Wines Group Ltd<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\
+\":\\\"HK:01876\\\",\\n\\t\\t\\t\\\"Exchange\\\":\\\"HongKongStockExchange\\\"\
+,\\n\\t\\t\\t\\\"Name\\\":\\\"Budweiser Brewing Co APAC \
+Ltd\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/hk-01876\\\\\\\">Budweiser \
+Brewing Co APAC \
+Ltd<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"L:CCR\\\",\
+\\n\\t\\t\\t\\\"Exchange\\\":\\\"LondonStockExchange\\\",\\n\\t\\t\\t\\\"Name\
+\\\":\\\"C&C Group\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/l-ccr\\\\\\\">C&C Group<\\\
+\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"MB:532478\\\",\\\
+n\\t\\t\\t\\\"Exchange\\\":\\\"BombayStockExchange\\\",\\n\\t\\t\\t\\\"Name\\\
+\":\\\"United Breweries Ltd\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a href=\\\\\\\
+\"\\\\/assets\\\\/equities\\\\/data\\\\/mb-532478\\\\\\\">United Breweries \
+Ltd<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"MB:HEIA\\\"\
+,\\n\\t\\t\\t\\\"Exchange\\\":\\\"BombayStockExchange\\\",\\n\\t\\t\\t\\\"\
+Name\\\":\\\"Heineken NV\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/mb-heia\\\\\\\">Heineken \
+NV<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"NASDAQ:BREW\
+\\\",\\n\\t\\t\\t\\\"Exchange\\\":\\\"Nasdaq\\\",\\n\\t\\t\\t\\\"Name\\\":\\\"\
+Craft Brew Alliance Inc\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a href=\\\\\\\"\\\
+\\/assets\\\\/equities\\\\/data\\\\/nasdaq-brew\\\\\\\">Craft Brew Alliance \
+Inc<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"NYSE:ABEV\\\
+\",\\n\\t\\t\\t\\\"Exchange\\\":\\\"NewYorkStockExchange\\\",\\n\\t\\t\\t\\\"\
+Name\\\":\\\"Ambev SA\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/nyse-abev\\\\\\\">Ambev \
+SA<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"NYSE:BUD\\\"\
+,\\n\\t\\t\\t\\\"Exchange\\\":\\\"NewYorkStockExchange\\\",\\n\\t\\t\\t\\\"\
+Name\\\":\\\"Anheuser-Busch InBev\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a href=\
+\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/nyse-bud\\\\\\\">Anheuser-Busch \
+InBev<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"NYSE:CCU\
+\\\",\\n\\t\\t\\t\\\"Exchange\\\":\\\"NewYorkStockExchange\\\",\\n\\t\\t\\t\\\
+\"Name\\\":\\\"Compania Cervecerias \
+Unidas\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/nyse-ccu\\\\\\\">Compania \
+Cervecerias \
+Unidas<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"NYSE:\
+FMX\\\",\\n\\t\\t\\t\\\"Exchange\\\":\\\"NewYorkStockExchange\\\",\\n\\t\\t\\\
+t\\\"Name\\\":\\\"Fomento Economico \
+Mexicano\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/nyse-fmx\\\\\\\">Fomento \
+Economico \
+Mexicano<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"NYSE:\
+SAM\\\",\\n\\t\\t\\t\\\"Exchange\\\":\\\"NewYorkStockExchange\\\",\\n\\t\\t\\\
+t\\\"Name\\\":\\\"Boston Beer\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a href=\\\\\
+\\\"\\\\/assets\\\\/equities\\\\/data\\\\/nyse-sam\\\\\\\">Boston \
+Beer<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"NYSE:TAP\\\
+\",\\n\\t\\t\\t\\\"Exchange\\\":\\\"NewYorkStockExchange\\\",\\n\\t\\t\\t\\\"\
+Name\\\":\\\"Molson Coors\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a href=\\\\\\\"\
+\\\\/assets\\\\/equities\\\\/data\\\\/nyse-tap\\\\\\\">Molson Coors<\\\\/a>\\\
+\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"NYSE:TAP-A\\\",\\n\\t\\\
+t\\t\\\"Exchange\\\":\\\"NewYorkStockExchange\\\",\\n\\t\\t\\t\\\"Name\\\":\\\
+\"Molson Coors Beverage Co\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/nyse-tap-a\\\\\\\">Molson \
+Coors Beverage Co<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\
+\\\"SS:600600\\\",\\n\\t\\t\\t\\\"Exchange\\\":\\\"ShanghaiStockExchange\\\",\
+\\n\\t\\t\\t\\\"Name\\\":\\\"Tsingtao Brewery Co \
+Ltd\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/ss-600600\\\\\\\">Tsingtao \
+Brewery Co \
+Ltd<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"TO:BR\\\",\
+\\n\\t\\t\\t\\\"Exchange\\\":\\\"TorontoStockExchange\\\",\\n\\t\\t\\t\\\"\
+Name\\\":\\\"Big Rock Brewery Inc\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a href=\
+\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/to-br\\\\\\\">Big Rock Brewery \
+Inc<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"TO:TPX-A\\\
+\",\\n\\t\\t\\t\\\"Exchange\\\":\\\"TorontoStockExchange\\\",\\n\\t\\t\\t\\\"\
+Name\\\":\\\"Molson Coors Canada Inc\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/to-tpx-a\\\\\\\">Molson \
+Coors Canada \
+Inc<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"TO:TPX-B\\\
+\",\\n\\t\\t\\t\\\"Exchange\\\":\\\"TorontoStockExchange\\\",\\n\\t\\t\\t\\\"\
+Name\\\":\\\"Molson Coors Canada Inc\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/to-tpx-b\\\\\\\">Molson \
+Coors Canada \
+Inc<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"TO:WBR\\\",\
+\\n\\t\\t\\t\\\"Exchange\\\":\\\"TorontoStockExchange\\\",\\n\\t\\t\\t\\\"\
+Name\\\":\\\"Waterloo Brewing Ltd\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a href=\
+\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/to-wbr\\\\\\\">Waterloo Brewing \
+Ltd<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"TSE:2501\\\
+\",\\n\\t\\t\\t\\\"Exchange\\\":\\\"TokyoStockExchange\\\",\\n\\t\\t\\t\\\"\
+Name\\\":\\\"Sapporo Holdings\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a href=\\\\\
+\\\"\\\\/assets\\\\/equities\\\\/data\\\\/tse-2501\\\\\\\">Sapporo \
+Holdings<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"TSE:\
+2502\\\",\\n\\t\\t\\t\\\"Exchange\\\":\\\"TokyoStockExchange\\\",\\n\\t\\t\\t\
+\\\"Name\\\":\\\"Asahi Group\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/tse-2502\\\\\\\">Asahi \
+Group<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"TSE:2503\
+\\\",\\n\\t\\t\\t\\\"Exchange\\\":\\\"TokyoStockExchange\\\",\\n\\t\\t\\t\\\"\
+Name\\\":\\\"Kirin Holdings Co Ltd\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/tse-2503\\\\\\\">Kirin \
+Holdings Co Ltd<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\
+\"TSE:2531\\\",\\n\\t\\t\\t\\\"Exchange\\\":\\\"TokyoStockExchange\\\",\\n\\t\
+\\t\\t\\\"Name\\\":\\\"Takara Holdings \
+Inc\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/tse-2531\\\\\\\">Takara \
+Holdings Inc<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"\
+TSE:2587\\\",\\n\\t\\t\\t\\\"Exchange\\\":\\\"TokyoStockExchange\\\",\\n\\t\\\
+t\\t\\\"Name\\\":\\\"Suntory Beverage & \
+Food\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/tse-2587\\\\\\\">Suntory \
+Beverage & \
+Food<\\\\/a>\\\"\\n\\t\\t}\\n\\t],\\n\\t\\\"BeveragesNonAlcoholic\\\":[\\n\\t\
+\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"DE:CCC3\\\",\\n\\t\\t\\t\\\"Exchange\\\":\\\
+\"Xetra\\\",\\n\\t\\t\\t\\\"Name\\\":\\\"Coca-Cola \
+Co\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/de-ccc3\\\\\\\">Coca-Cola \
+Co<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"DE:PEP\\\",\
+\\n\\t\\t\\t\\\"Exchange\\\":\\\"Xetra\\\",\\n\\t\\t\\t\\\"Name\\\":\\\"\
+PepsiCo Inc\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/de-pep\\\\\\\">PepsiCo \
+Inc<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"F:0OO\\\",\
+\\n\\t\\t\\t\\\"Exchange\\\":\\\"FrankfurtStockExchange\\\",\\n\\t\\t\\t\\\"\
+Name\\\":\\\"Lassonde Industries Inc\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/f-0oo\\\\\\\">Lassonde \
+Industries \
+Inc<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"F:20V\\\",\
+\\n\\t\\t\\t\\\"Exchange\\\":\\\"FrankfurtStockExchange\\\",\\n\\t\\t\\t\\\"\
+Name\\\":\\\"National Beverage Corp\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/f-20v\\\\\\\">National \
+Beverage Corp<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"\
+F:58U\\\",\\n\\t\\t\\t\\\"Exchange\\\":\\\"FrankfurtStockExchange\\\",\\n\\t\\\
+t\\t\\\"Name\\\":\\\"Uni-President China Holdings \
+Ltd\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/f-58u\\\\\\\">Uni-\
+President China Holdings \
+Ltd<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"F:7BC\\\",\
+\\n\\t\\t\\t\\\"Exchange\\\":\\\"FrankfurtStockExchange\\\",\\n\\t\\t\\t\\\"\
+Name\\\":\\\"BevCanna Enterprises Inc\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/f-7bc\\\\\\\">BevCanna \
+Enterprises Inc<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\
+\"F:AKOB\\\",\\n\\t\\t\\t\\\"Exchange\\\":\\\"FrankfurtStockExchange\\\",\\n\\\
+t\\t\\t\\\"Name\\\":\\\"Embotelladora Andina \
+SA\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/f-akob\\\\\\\">\
+Embotelladora Andina \
+SA<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"F:AWJA\\\",\
+\\n\\t\\t\\t\\\"Exchange\\\":\\\"FrankfurtStockExchange\\\",\\n\\t\\t\\t\\\"\
+Name\\\":\\\"Alkaline Water Co Inc\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/f-awja\\\\\\\">Alkaline \
+Water Co Inc<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"F:\
+B6S\\\",\\n\\t\\t\\t\\\"Exchange\\\":\\\"FrankfurtStockExchange\\\",\\n\\t\\t\
+\\t\\\"Name\\\":\\\"Britvic PLC\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a href=\\\
+\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/f-b6s\\\\\\\">Britvic PLC<\\\\/a>\
+\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"F:C0Q\\\",\\n\\t\\t\\\
+t\\\"Exchange\\\":\\\"FrankfurtStockExchange\\\",\\n\\t\\t\\t\\\"Name\\\":\\\"\
+Coca-Cola HBC AG\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/f-c0q\\\\\\\">Coca-Cola \
+HBC AG<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"F:CC5\\\
+\",\\n\\t\\t\\t\\\"Exchange\\\":\\\"FrankfurtStockExchange\\\",\\n\\t\\t\\t\\\
+\"Name\\\":\\\"Coca-Cola Consolidated \
+Inc\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/f-cc5\\\\\\\">Coca-Cola \
+Consolidated \
+Inc<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"F:CCC3\\\",\
+\\n\\t\\t\\t\\\"Exchange\\\":\\\"FrankfurtStockExchange\\\",\\n\\t\\t\\t\\\"\
+Name\\\":\\\"Coca-Cola Co\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a href=\\\\\\\"\
+\\\\/assets\\\\/equities\\\\/data\\\\/f-ccc3\\\\\\\">Coca-Cola Co<\\\\/a>\\\"\
+\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"F:CCKC\\\",\\n\\t\\t\\t\\\
+\"Exchange\\\":\\\"FrankfurtStockExchange\\\",\\n\\t\\t\\t\\\"Name\\\":\\\"\
+Coca-Cola HBC AG\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/f-cckc\\\\\\\">Coca-Cola \
+HBC AG<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"F:CCL\\\
+\",\\n\\t\\t\\t\\\"Exchange\\\":\\\"FrankfurtStockExchange\\\",\\n\\t\\t\\t\\\
+\"Name\\\":\\\"Coca-Cola Amatil Ltd\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/f-ccl\\\\\\\">Coca-Cola \
+Amatil Ltd<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"F:\
+CCW\\\",\\n\\t\\t\\t\\\"Exchange\\\":\\\"FrankfurtStockExchange\\\",\\n\\t\\t\
+\\t\\\"Name\\\":\\\"Coca-Cola Bottlers Japan Holdings \
+Inc\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/f-ccw\\\\\\\">Coca-Cola \
+Bottlers Japan Holdings \
+Inc<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"F:CFH\\\",\
+\\n\\t\\t\\t\\\"Exchange\\\":\\\"FrankfurtStockExchange\\\",\\n\\t\\t\\t\\\"\
+Name\\\":\\\"China Foods Ltd\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/f-cfh\\\\\\\">China Foods \
+Ltd<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"F:CFS5\\\",\
+\\n\\t\\t\\t\\\"Exchange\\\":\\\"FrankfurtStockExchange\\\",\\n\\t\\t\\t\\\"\
+Name\\\":\\\"Coca-Cola Femsa SAB de CV\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/f-cfs5\\\\\\\">Coca-Cola \
+Femsa SAB de CV<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\
+\"F:CFSL\\\",\\n\\t\\t\\t\\\"Exchange\\\":\\\"FrankfurtStockExchange\\\",\\n\\\
+t\\t\\t\\\"Name\\\":\\\"Coca-Cola Femsa SAB de \
+CV\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/f-cfsl\\\\\\\">Coca-Cola \
+Femsa SAB de CV<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\
+\"F:CK0\\\",\\n\\t\\t\\t\\\"Exchange\\\":\\\"FrankfurtStockExchange\\\",\\n\\\
+t\\t\\t\\\"Name\\\":\\\"Coca-Cola European Partners \
+PLC\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/f-ck0\\\\\\\">Coca-Cola \
+European Partners \
+PLC<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"F:DP5\\\",\
+\\n\\t\\t\\t\\\"Exchange\\\":\\\"FrankfurtStockExchange\\\",\\n\\t\\t\\t\\\"\
+Name\\\":\\\"Keurig Dr Pepper Inc\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a href=\
+\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/f-dp5\\\\\\\">Keurig Dr Pepper \
+Inc<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"F:FV8\\\",\
+\\n\\t\\t\\t\\\"Exchange\\\":\\\"FrankfurtStockExchange\\\",\\n\\t\\t\\t\\\"\
+Name\\\":\\\"Fevertree Drinks PLC\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a href=\
+\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/f-fv8\\\\\\\">Fevertree Drinks \
+PLC<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"F:GC6\\\",\
+\\n\\t\\t\\t\\\"Exchange\\\":\\\"FrankfurtStockExchange\\\",\\n\\t\\t\\t\\\"\
+Name\\\":\\\"Primo Water Corp\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a href=\\\\\
+\\\"\\\\/assets\\\\/equities\\\\/data\\\\/f-gc6\\\\\\\">Primo Water \
+Corp<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"F:MOB\\\",\
+\\n\\t\\t\\t\\\"Exchange\\\":\\\"FrankfurtStockExchange\\\",\\n\\t\\t\\t\\\"\
+Name\\\":\\\"Monster Beverage Corp\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/f-mob\\\\\\\">Monster \
+Beverage Corp<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"\
+F:N1K\\\",\\n\\t\\t\\t\\\"Exchange\\\":\\\"FrankfurtStockExchange\\\",\\n\\t\\\
+t\\t\\\"Name\\\":\\\"NewAge Inc\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a href=\\\
+\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/f-n1k\\\\\\\">NewAge \
+Inc<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"F:PEP\\\",\
+\\n\\t\\t\\t\\\"Exchange\\\":\\\"FrankfurtStockExchange\\\",\\n\\t\\t\\t\\\"\
+Name\\\":\\\"PepsiCo\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/f-pep\\\\\\\">PepsiCo<\\\\/\
+a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"F:YKH\\\",\\n\\t\\t\
+\\t\\\"Exchange\\\":\\\"FrankfurtStockExchange\\\",\\n\\t\\t\\t\\\"Name\\\":\\\
+\"Yakult Honsha Co Ltd\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/f-ykh\\\\\\\">Yakult \
+Honsha Co \
+Ltd<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"F:ZZ8\\\",\
+\\n\\t\\t\\t\\\"Exchange\\\":\\\"FrankfurtStockExchange\\\",\\n\\t\\t\\t\\\"\
+Name\\\":\\\"China Huiyuan Juice Group \
+Ltd\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/f-zz8\\\\\\\">China \
+Huiyuan Juice Group \
+Ltd<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"HK:00220\\\
+\",\\n\\t\\t\\t\\\"Exchange\\\":\\\"HongKongStockExchange\\\",\\n\\t\\t\\t\\\"\
+Name\\\":\\\"Uni-President China Holdings Ltd\\\",\\n\\t\\t\\t\\\"MCLink\\\":\
+\\\"<a href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/hk-00220\\\\\\\">\
+Uni-President China Holdings Ltd<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\
+\\\"Symbol\\\":\\\"HK:00506\\\",\\n\\t\\t\\t\\\"Exchange\\\":\\\"\
+HongKongStockExchange\\\",\\n\\t\\t\\t\\\"Name\\\":\\\"China Foods \
+Ltd\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/hk-00506\\\\\\\">China \
+Foods Ltd<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"HK:\
+01115\\\",\\n\\t\\t\\t\\\"Exchange\\\":\\\"HongKongStockExchange\\\",\\n\\t\\\
+t\\t\\\"Name\\\":\\\"Tibet Water Resources \
+Ltd\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/hk-01115\\\\\\\">Tibet \
+Water Resources \
+Ltd<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"HK:01886\\\
+\",\\n\\t\\t\\t\\\"Exchange\\\":\\\"HongKongStockExchange\\\",\\n\\t\\t\\t\\\"\
+Name\\\":\\\"China Huiyuan Juice Group \
+Ltd\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/hk-01886\\\\\\\">China \
+Huiyuan Juice Group \
+Ltd<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"HK:02218\\\
+\",\\n\\t\\t\\t\\\"Exchange\\\":\\\"HongKongStockExchange\\\",\\n\\t\\t\\t\\\"\
+Name\\\":\\\"Yantai North Andre Juice Co \
+Ltd\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/hk-02218\\\\\\\">Yantai \
+North Andre Juice Co \
+Ltd<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"L:BVIC\\\",\
+\\n\\t\\t\\t\\\"Exchange\\\":\\\"LondonStockExchange\\\",\\n\\t\\t\\t\\\"Name\
+\\\":\\\"Britvic\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/l-bvic\\\\\\\">Britvic<\\\\\
+/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"L:CCEP\\\",\\n\\t\\\
+t\\t\\\"Exchange\\\":\\\"LondonStockExchange\\\",\\n\\t\\t\\t\\\"Name\\\":\\\"\
+Coca-Cola European Partners PLC\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a href=\\\
+\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/l-ccep\\\\\\\">Coca-Cola European \
+Partners PLC<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"L:\
+CCH\\\",\\n\\t\\t\\t\\\"Exchange\\\":\\\"LondonStockExchange\\\",\\n\\t\\t\\t\
+\\\"Name\\\":\\\"Coca-Cola HBC\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/l-cch\\\\\\\">Coca-Cola \
+HBC<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"L:FEVR\\\",\
+\\n\\t\\t\\t\\\"Exchange\\\":\\\"LondonStockExchange\\\",\\n\\t\\t\\t\\\"Name\
+\\\":\\\"Fevertree Drinks PLC\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a href=\\\\\
+\\\"\\\\/assets\\\\/equities\\\\/data\\\\/l-fevr\\\\\\\">Fevertree Drinks \
+PLC<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"NASDAQ:\
+CELH\\\",\\n\\t\\t\\t\\\"Exchange\\\":\\\"Nasdaq\\\",\\n\\t\\t\\t\\\"Name\\\":\
+\\\"Celsius Holdings Inc\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/nasdaq-celh\\\\\\\">\
+Celsius Holdings Inc<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\
+\":\\\"NASDAQ:COKE\\\",\\n\\t\\t\\t\\\"Exchange\\\":\\\"Nasdaq\\\",\\n\\t\\t\\\
+t\\\"Name\\\":\\\"Coca-Cola Bottling Company \
+Consolidated\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a href=\\\\\\\"\\\\/assets\\\
+\\/equities\\\\/data\\\\/nasdaq-coke\\\\\\\">Coca-Cola Bottling Company \
+Consolidated<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"\
+NASDAQ:FIZZ\\\",\\n\\t\\t\\t\\\"Exchange\\\":\\\"Nasdaq\\\",\\n\\t\\t\\t\\\"\
+Name\\\":\\\"National Beverage Corp\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/nasdaq-fizz\\\\\\\">\
+National Beverage Corp<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\
+\\\":\\\"NASDAQ:KDP\\\",\\n\\t\\t\\t\\\"Exchange\\\":\\\"Nasdaq\\\",\\n\\t\\t\
+\\t\\\"Name\\\":\\\"Keurig Dr Pepper \
+Inc\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/nasdaq-kdp\\\\\\\">Keurig \
+Dr Pepper \
+Inc<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"NASDAQ:\
+MNST\\\",\\n\\t\\t\\t\\\"Exchange\\\":\\\"Nasdaq\\\",\\n\\t\\t\\t\\\"Name\\\":\
+\\\"Monster Beverage\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/nasdaq-mnst\\\\\\\">\
+Monster Beverage<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\
+\"NASDAQ:NBEV\\\",\\n\\t\\t\\t\\\"Exchange\\\":\\\"Nasdaq\\\",\\n\\t\\t\\t\\\"\
+Name\\\":\\\"NewAge Inc\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a href=\\\\\\\"\\\
+\\/assets\\\\/equities\\\\/data\\\\/nasdaq-nbev\\\\\\\">NewAge \
+Inc<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"NASDAQ:PEP\
+\\\",\\n\\t\\t\\t\\\"Exchange\\\":\\\"Nasdaq\\\",\\n\\t\\t\\t\\\"Name\\\":\\\"\
+PepsiCo Inc\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/nasdaq-pep\\\\\\\">PepsiCo \
+Inc<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"NASDAQ:\
+REED\\\",\\n\\t\\t\\t\\\"Exchange\\\":\\\"Nasdaq\\\",\\n\\t\\t\\t\\\"Name\\\":\
+\\\"Reed's Inc\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a href=\\\\\\\"\\\\/assets\
+\\\\/equities\\\\/data\\\\/nasdaq-reed\\\\\\\">Reed's \
+Inc<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"NASDAQ:\
+WTER\\\",\\n\\t\\t\\t\\\"Exchange\\\":\\\"Nasdaq\\\",\\n\\t\\t\\t\\\"Name\\\":\
+\\\"Alkaline Water Co Inc\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a href=\\\\\\\"\
+\\\\/assets\\\\/equities\\\\/data\\\\/nasdaq-wter\\\\\\\">Alkaline Water Co \
+Inc<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"NYSE:AKO-A\
+\\\",\\n\\t\\t\\t\\\"Exchange\\\":\\\"NewYorkStockExchange\\\",\\n\\t\\t\\t\\\
+\"Name\\\":\\\"Embotelladora Andina SA\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/nyse-ako-a\\\\\\\">\
+Embotelladora Andina \
+SA<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"NYSE:AKO-B\\\
+\",\\n\\t\\t\\t\\\"Exchange\\\":\\\"NewYorkStockExchange\\\",\\n\\t\\t\\t\\\"\
+Name\\\":\\\"Embotelladora Andina SA\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/nyse-ako-b\\\\\\\">\
+Embotelladora Andina \
+SA<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"NYSE:CCEP\\\
+\",\\n\\t\\t\\t\\\"Exchange\\\":\\\"NewYorkStockExchange\\\",\\n\\t\\t\\t\\\"\
+Name\\\":\\\"Coca-Cola European Partners \
+PLC\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/nyse-ccep\\\\\\\">Coca-\
+Cola European Partners \
+PLC<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"NYSE:KO\\\"\
+,\\n\\t\\t\\t\\\"Exchange\\\":\\\"NewYorkStockExchange\\\",\\n\\t\\t\\t\\\"\
+Name\\\":\\\"Coca-Cola\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/nyse-ko\\\\\\\">Coca-Cola<\
+\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"NYSE:KOF\\\",\\\
+n\\t\\t\\t\\\"Exchange\\\":\\\"NewYorkStockExchange\\\",\\n\\t\\t\\t\\\"Name\\\
+\":\\\"Coca-Cola FEMSA\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/nyse-kof\\\\\\\">Coca-Cola \
+FEMSA<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"NYSE:\
+PRMW\\\",\\n\\t\\t\\t\\\"Exchange\\\":\\\"NewYorkStockExchange\\\",\\n\\t\\t\\\
+t\\\"Name\\\":\\\"Primo Water Corp\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/nyse-prmw\\\\\\\">Primo \
+Water Corp<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"SS:\
+605198\\\",\\n\\t\\t\\t\\\"Exchange\\\":\\\"ShanghaiStockExchange\\\",\\n\\t\\\
+t\\t\\\"Name\\\":\\\"Yantai North Andre Juice Co \
+Ltd\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/ss-605198\\\\\\\">Yantai \
+North Andre Juice Co \
+Ltd<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"TO:25935\\\
+\",\\n\\t\\t\\t\\\"Exchange\\\":\\\"TorontoStockExchange\\\",\\n\\t\\t\\t\\\"\
+Name\\\":\\\"ITO EN Ltd\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a href=\\\\\\\"\\\
+\\/assets\\\\/equities\\\\/data\\\\/to-25935\\\\\\\">ITO EN \
+Ltd<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"TO:LAS-A\\\
+\",\\n\\t\\t\\t\\\"Exchange\\\":\\\"TorontoStockExchange\\\",\\n\\t\\t\\t\\\"\
+Name\\\":\\\"Lassonde Industries Inc\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/to-las-a\\\\\\\">Lassonde \
+Industries \
+Inc<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"TO:PRMW\\\"\
+,\\n\\t\\t\\t\\\"Exchange\\\":\\\"TorontoStockExchange\\\",\\n\\t\\t\\t\\\"\
+Name\\\":\\\"Primo Water Corp\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a href=\\\\\
+\\\"\\\\/assets\\\\/equities\\\\/data\\\\/to-prmw\\\\\\\">Primo Water Corp<\\\
+\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"TSE:2267\\\",\\n\
+\\t\\t\\t\\\"Exchange\\\":\\\"TokyoStockExchange\\\",\\n\\t\\t\\t\\\"Name\\\":\
+\\\"Yakult Honsha Co Ltd\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/tse-2267\\\\\\\">Yakult \
+Honsha Co \
+Ltd<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"TSE:2579\\\
+\",\\n\\t\\t\\t\\\"Exchange\\\":\\\"TokyoStockExchange\\\",\\n\\t\\t\\t\\\"\
+Name\\\":\\\"Coca-Cola West\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a href=\\\\\\\
+\"\\\\/assets\\\\/equities\\\\/data\\\\/tse-2579\\\\\\\">Coca-Cola \
+West<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"TSE:2593\\\
+\",\\n\\t\\t\\t\\\"Exchange\\\":\\\"TokyoStockExchange\\\",\\n\\t\\t\\t\\\"\
+Name\\\":\\\"ITO EN Ltd\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a href=\\\\\\\"\\\
+\\/assets\\\\/equities\\\\/data\\\\/tse-2593\\\\\\\">ITO EN \
+Ltd<\\\\/a>\\\"\\n\\t\\t}\\n\\t],\\n\\t\\\"BeveragesSoftDrinks\\\":[\\n\\t\\t{\
+\\n\\t\\t\\t\\\"Symbol\\\":\\\"F:AF72\\\",\\n\\t\\t\\t\\\"Exchange\\\":\\\"\
+FrankfurtStockExchange\\\",\\n\\t\\t\\t\\\"Name\\\":\\\"Barr (A G) \
+PLC\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/f-af72\\\\\\\">Barr (A G) \
+PLC<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"HK:00756\\\
+\",\\n\\t\\t\\t\\\"Exchange\\\":\\\"HongKongStockExchange\\\",\\n\\t\\t\\t\\\"\
+Name\\\":\\\"Summi (Group) Holdings Ltd\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/hk-00756\\\\\\\">Summi \
+(Group) Holdings Ltd<\\\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\
+\":\\\"L:BAG\\\",\\n\\t\\t\\t\\\"Exchange\\\":\\\"LondonStockExchange\\\",\\n\
+\\t\\t\\t\\\"Name\\\":\\\"A.G. Barr\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a \
+href=\\\\\\\"\\\\/assets\\\\/equities\\\\/data\\\\/l-bag\\\\\\\">A.G. Barr<\\\
+\\/a>\\\"\\n\\t\\t},\\n\\t\\t{\\n\\t\\t\\t\\\"Symbol\\\":\\\"TSE:2590\\\",\\n\
+\\t\\t\\t\\\"Exchange\\\":\\\"TokyoStockExchange\\\",\\n\\t\\t\\t\\\"Name\\\":\
+\\\"DyDo Group Holdings Inc\\\",\\n\\t\\t\\t\\\"MCLink\\\":\\\"<a href=\\\\\\\
+\"\\\\/assets\\\\/equities\\\\/data\\\\/tse-2590\\\\\\\">DyDo Group Holdings \
+Inc<\\\\/a>\\\"\\n\\t\\t}\\n\\t]\\n}\"\>"], "Output",
+ CellChangeTimes->{
+  3.8163660482203684`*^9, 3.8163661291662254`*^9, 3.816366305116522*^9, 
+   3.8163663459930706`*^9, 3.8163663996612253`*^9, 3.8163664456487017`*^9, 
+   3.8163665914468603`*^9, 3.8163667779249196`*^9, 3.8163669325293665`*^9, 
+   3.8163669655135155`*^9, {3.816367887475606*^9, 3.8163679047340317`*^9}, 
+   3.8163680004978085`*^9, 3.8163680825920725`*^9, 3.816368293606595*^9, 
+   3.816368360106474*^9},
+ CellLabel->
+  "Out[1008]=",ExpressionUUID->"ba281480-66c5-42e7-89b2-2ce194bdc7bd"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{"Print", " ", "Industry", " ", "List"}], " ", "*)"}], 
+  "\[IndentingNewLine]", 
+  RowBox[{"PrintIndustryListJSON", "[", "]"}]}]], "Code",
+ CellChangeTimes->{{3.816365717312924*^9, 
+  3.8163657546447835`*^9}},ExpressionUUID->"ab02e57b-91e7-4204-a542-\
+d43ed436910c"]
+},
+WindowSize->{1218.75, 739.5},
+WindowMargins->{{75, Automatic}, {Automatic, 4.5}},
+FrontEndVersion->"12.1 for Microsoft Windows (64-bit) (June 19, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"b75cc2df-208d-465a-b6b9-44b23ca63ec0"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 233, 4, 28, "Input",ExpressionUUID->"f2629849-9170-4d7b-8601-5b0e254d181c"],
+Cell[816, 28, 6960, 115, 483, "Output",ExpressionUUID->"d9f26641-2fa6-4521-a8ed-f98ce63053a7"]
+}, Open  ]],
+Cell[7791, 146, 1978, 47, 122, "Input",ExpressionUUID->"151389d4-ee03-4a16-8d17-e1c4a774bdd2"],
+Cell[CellGroupData[{
+Cell[9794, 197, 231, 4, 28, "Input",ExpressionUUID->"a9174478-d300-45f9-8239-3f3bffc15335"],
+Cell[10028, 203, 205, 3, 32, "Output",ExpressionUUID->"4017e451-ebb6-4bd0-8aaf-b1cbfa388713"]
+}, Open  ]],
+Cell[10248, 209, 1299, 31, 66, "Input",ExpressionUUID->"a72208f0-0831-4e67-b182-15eacf621eb8"],
+Cell[CellGroupData[{
+Cell[11572, 244, 332, 7, 28, "Input",ExpressionUUID->"96d650ff-aa3f-4ad1-aa58-4af3bdf257c2"],
+Cell[11907, 253, 472, 7, 32, "Output",ExpressionUUID->"70bc029c-2efe-418e-8219-25c5021500fc"]
+}, Open  ]],
+Cell[12394, 263, 2352, 50, 216, "Input",ExpressionUUID->"dfa2bdea-66f9-4a2c-ab65-6fc4b828bc18"],
+Cell[14749, 315, 591, 15, 103, "Input",ExpressionUUID->"58d57024-c810-47a7-94d7-55667e135ffe"],
+Cell[CellGroupData[{
+Cell[15365, 334, 257, 5, 28, "Input",ExpressionUUID->"57eb2e78-c27e-42c4-85c2-916a8135b923"],
+Cell[15625, 341, 38833, 562, 13701, "Output",ExpressionUUID->"ba281480-66c5-42e7-89b2-2ce194bdc7bd"]
+}, Open  ]],
+Cell[54473, 906, 323, 8, 69, "Code",ExpressionUUID->"ab02e57b-91e7-4204-a542-d43ed436910c"]
+}
+]
+*)
+
+(* End of internal cache information *)
+
