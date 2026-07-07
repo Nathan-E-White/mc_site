@@ -1,6 +1,6 @@
 {
-  "name": "TODO",
-  "description": "TODO",
+  "name": "mogul-charts-archive",
+  "description": "Archived Sapper/Svelte market-data web app with Cloud Run deployment artifacts.",
   "version": "0.0.1",
   "scripts": {
     "dev": "sapper dev",
@@ -10,8 +10,8 @@
     "cy:run": "cypress run",
     "cy:open": "cypress open",
     "test": "run-p --race dev cy:run",
-    "dev:docker:build": "docker build -t sapper-on-cloud-run:latest .",
-    "dev:docker:run": "docker run -d -p 3000:3000 sapper-on-cloud-run:latest",
+    "dev:docker:build": "docker build -t mogul-charts-archive:latest .",
+    "dev:docker:run": "docker run -d -p 3000:3000 mogul-charts-archive:latest",
     "postinstall": "npm install --prefix firebase"
   },
   "dependencies": {
